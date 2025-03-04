@@ -1,6 +1,8 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { PROD_URL , PURCHASE_API_ENDPOINT } from "@/config";
 
-const COURSE_PURCHASE_API = "http://localhost:8080/api/v1/purchase";
+const COURSE_PURCHASE_API = PROD_URL+PURCHASE_API_ENDPOINT;
+
 
 export const purchaseApi = createApi({
   reducerPath: "purchaseApi",
