@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { PROD_URL , PROGRESS_API_ENDPOINT } from "@/config";
+import { PROGRESS_API_ENDPOINT } from "@/config";
 
-const COURSE_PROGRESS_API = PROD_URL+PROGRESS_API_ENDPOINT;
+const COURSE_PROGRESS_API = PROGRESS_API_ENDPOINT;
 
 
 export const courseProgressApi = createApi({
