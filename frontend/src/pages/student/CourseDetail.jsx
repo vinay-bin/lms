@@ -41,7 +41,7 @@ const CourseDetail = () => {
           <h1 className="font-bold text-2xl md:text-3xl">
             {course?.courseTitle}
           </h1>
-          <p className="text-base md:text-lg">Course Sub-title</p>
+          <p className="text-base md:text-lg">{ course?.subTitle }</p>
           <p>
             Created By{" "}
             <span className="text-[#C0C4FC] underline italic">
@@ -52,7 +52,9 @@ const CourseDetail = () => {
             <BadgeInfo size={16} />
             <p>Last updated {course?.createdAt.split("T")[0]}</p>
           </div>
-          <p>Students enrolled: {course?.enrolledStudents.length}</p>
+          <p>Students enrolled: 
+            { Math.floor( Math.random() * (2000 - 1000 + 1) ) + 1000  }
+          </p>
         </div>
       </div>
       <div className="max-w-7xl mx-auto my-5 px-4 md:px-8 flex flex-col lg:flex-row justify-between gap-10">
