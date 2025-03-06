@@ -56,7 +56,7 @@ const Course = ({ course }) => {
             </div>
           </div>
           <div className="bg-indigo-600 text-white p-2
-                                        w-fit absolute top-0 right-0 rounded-bl-xl">
+                                        w-fit absolute -top-3 right-0 rounded-bl-xl">
             50% Off
           </div>
         </CardContent>
