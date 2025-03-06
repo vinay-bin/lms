@@ -23,6 +23,9 @@ import {
 } from "./components/ProtectedRoutes";
 import PurchaseCourseProtectedRoute from "./components/PurchaseCourseProtectedRoute";
 import { ThemeProvider } from "./components/ThemeProvider";
+import OurCourses from "./components/OurCourses";
+import { OurInstructors } from "./components/OurInstructors";
+import Testimonials from "./components/Testimonials";
 
 const appRouter = createBrowserRouter([
   {
@@ -34,7 +37,10 @@ const appRouter = createBrowserRouter([
         element: (
           <>
             <HeroSection />
-            <Courses />
+            <OurCourses />
+            <OurInstructors />
+            <Testimonials />
+            {/* <Courses /> */}
           </>
         ),
       },
@@ -65,17 +71,17 @@ const appRouter = createBrowserRouter([
       {
         path: "course/search",
         element: (
-          <ProtectedRoute>
+          // <ProtectedRoute>
             <SearchPage />
-          </ProtectedRoute>
+          // </ProtectedRoute>
         ),
       },
       {
         path: "course-detail/:courseId",
         element: (
-          <ProtectedRoute>
+          // <ProtectedRoute>
             <CourseDetail />
-          </ProtectedRoute>
+          // </ProtectedRoute>
         ),
       },
       {
